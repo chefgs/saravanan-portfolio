@@ -8,10 +8,13 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { ThemeToggle } from './theme-toggle';
 
 const navLinks = [
+  { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
+  { href: '#technologies', label: 'Tools' },
   { href: '#services', label: 'Services' },
   { href: '#projects', label: 'Projects' },
   // { href: '#blog', label: 'Blog' },
+  { href: '#resume', label: 'Experience' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -26,12 +29,12 @@ const Header = () => {
           <span className="hidden sm:inline-block">Saravanan Gnanaguru</span>
           <span className="inline-block sm:hidden">Saravanan G.</span>
         </Link>
-        <nav className="hidden items-center gap-4 md:flex">
+        <nav className="hidden items-center gap-3 md:flex">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary px-2"
             >
               {label}
             </Link>
