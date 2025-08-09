@@ -1,11 +1,13 @@
-import { Github, Linkedin, Mail, Code, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail, Code, ExternalLink, Twitter, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const socialLinks = [
   { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/saravanan-gnanaguru/' },
   { name: 'GitHub', icon: Github, url: 'https://github.com/chefgs' },
+  { name: 'X', icon: Twitter, url: 'https://www.x.com/@saransid' },
   { name: 'Dev.to', icon: ExternalLink, url: 'https://dev.to/chefgs' },
   { name: 'Stack Overflow', icon: Code, url: 'https://stackoverflow.com/users/843986/saravanan-gnanaguru' },
+  { name: 'Phone', icon: Phone, url: 'tel:+919789374170' },
   { name: 'Email', icon: Mail, url: 'mailto:saravanan@cloudenginelabs.io' },
 ];
 

@@ -38,6 +38,8 @@ CONTACT
 - Email: saravanan@cloudenginelabs.io
 - LinkedIn: linkedin.com/in/saravanan-gnanaguru
 - GitHub: github.com/chefgs
+- X: x.com/@saransid
+- Phone: +91 97893 74170
 - Portfolio: yourdomain.com
 
 SUMMARY
