@@ -1,6 +1,6 @@
 'use client';
 
-import { Download, Briefcase } from 'lucide-react';
+import { Download, Briefcase, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const timelineData = [
@@ -56,10 +56,14 @@ const timelineData = [
 
 const ResumeSection = () => {
   const handleDownload = () => {
-    // In a real app, this would trigger a PDF download.
-    // For this prototype, we'll just log to the console.
-    console.log('Downloading Resume...');
-    alert('Resume download would be initiated here.');
+    // Create a link to the PDF and trigger a download
+    const pdfUrl = '/documents/saravanan_profile.pdf';
+    window.open(pdfUrl, '_blank');
+  };
+
+  const visitLinkedIn = () => {
+    // Replace with your actual LinkedIn profile URL
+    window.open('https://www.linkedin.com/in/saravanan-gnanaguru/', '_blank');
   };
 
   return (
@@ -86,10 +90,14 @@ const ResumeSection = () => {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center space-x-4">
             <Button size="lg" onClick={handleDownload} className="bg-primary text-primary-foreground hover:bg-primary/90">
                 <Download className="mr-2 h-5 w-5" />
-                Download Resume (PDF)
+                Download LinkedIn Profile (PDF)
+            </Button>
+            <Button size="lg" onClick={visitLinkedIn} className="bg-[#0077B5] text-white hover:bg-[#0077B5]/90">
+                <Linkedin className="mr-2 h-5 w-5" />
+                Visit LinkedIn Profile
             </Button>
         </div>
       </div>
