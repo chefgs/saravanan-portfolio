@@ -43,10 +43,10 @@ const AboutSection = () => {
                 </div>
                 <div className="grid gap-12 md:grid-cols-2">
                     <div className="space-y-6">
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-muted-foreground leading-relaxed text-justify">
                             I am the founder of CloudEngine Labs, a technology startup & private limited company that provides DevOps Cloud consulting services to Software development startup companies. With over 18 years of experience in various phases of IT software development that includes design, code development and DevOps & Cloud design and implementation. I help product startups accelerate the delivery of their products and features and more reliably, using cloud automation, infrastructure as code, and platform engineering.
                         </p>
-                        <p className="text-muted-foreground leading-relaxed">
+                        <p className="text-muted-foreground leading-relaxed text-justify">
                            My success story includes reducing the overall product release automation time from 2 days to 2 hours for a retail product development startup company. Before founding CloudEngine Labs, I worked with various companies, including Wipro, Accenture, Capgemini, HCL Technologies, and Infracloud Technologies, on projects ranging from small startups to large enterprise clients. I am also a technology blogger, speaker, career mentor, AWS Community Builder, and Hashicorp Ambassador. My passion is to share my knowledge and expertise in DevOps cloud technologies and help others succeed in their careers.
                         </p>
                         <Card className="bg-background">
