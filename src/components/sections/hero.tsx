@@ -1,26 +1,10 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Github, Linkedin, Code, ExternalLink, Mail, Twitter, Phone } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { Badge } from '../ui/badge';
 import { Card } from '../ui/card';
-
-const socialLinks = [
-  { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/saravanan-gnanaguru/' },
-  { name: 'GitHub', icon: Github, url: 'https://github.com/chefgs' },
-  { name: 'X', icon: Twitter, url: 'https://www.x.com/@saransid' },
-  { name: 'Dev.to', icon: ExternalLink, url: 'https://dev.to/chefgs' },
-  { name: 'Stack Overflow', icon: Code, url: 'https://stackoverflow.com/users/843986/saravanan-gnanaguru' },
-  { name: 'Phone', icon: Phone, url: 'tel:+919789374170' },
-  { name: 'Email', icon: Mail, url: 'mailto:saravanan@cloudenginelabs.io' },
-];
-
-const socialProof = [
-  "AWS Community Builder",
-  "HashiCorp Ambassador",
-  "Speaker",
-  "Tech Blogger"
-];
+import { portfolioData } from '@/config/portfolioData';
 
 const HeroSection = () => {
   return (
@@ -30,16 +14,16 @@ const HeroSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-12">
             <div className="order-2 md:order-1 space-y-4 max-w-6xl lg:max-w-7xl xl:max-w-full mx-auto md:mx-0">
               <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl leading-tight">
-                Accelerating Software Delivery with DevOps Cloud Automation & Deployment
+                {portfolioData.hero.title}
               </h1>
               <p className="text-lg text-medium text-foreground mt-6">
-                  This is Saravanan, a problem solver passionate about Streamlining DevOps, Platform Engineering, Automating Infrastructure, Cloud operations, and Deploying AI at scale for real-world impact.
+                {portfolioData.hero.description}
               </p>
               <p className="text-lg font-medium font-semibold text-primary mt-4">
-                Building AccelSDLC - A Developer Focused IDP Platform
+                {portfolioData.hero.specialization}
               </p>
               <div className="flex justify-center md:justify-start flex-wrap gap-2 mt-6">
-                {socialProof.map(item => <Badge key={item} variant="secondary">{item}</Badge>)}
+                {portfolioData.hero.socialProof.map(item => <Badge key={item} variant="secondary">{item}</Badge>)}
               </div>
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start mt-8">
                 <Button size="lg" asChild>
@@ -53,7 +37,7 @@ const HeroSection = () => {
                 </Button>
               </div>
               <div className="flex items-center justify-center md:justify-start gap-4 pt-8 mt-2">
-                {socialLinks.map(link => (
+                {portfolioData.hero.socialLinks.map(link => (
                   <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.name} className="text-muted-foreground hover:text-primary transition-colors">
                     <link.icon className="h-6 w-6" />
                   </a>
@@ -65,8 +49,8 @@ const HeroSection = () => {
               <Card className="rounded-full w-4/5 h-4/5 overflow-hidden">
                 <div className="relative w-full h-full">
                   <Image 
-                    src="/saravanan-gnanaguru.jpg"
-                    alt="Saravanan Gnanaguru"
+                    src={portfolioData.image}
+                    alt={portfolioData.name}
                     fill
                     loading="lazy"
                     className="relative z-10 rounded-full border-4 border-card object-cover"

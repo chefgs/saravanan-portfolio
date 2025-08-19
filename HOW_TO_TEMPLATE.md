@@ -6,10 +6,10 @@ This guide explains how to use this repository as a template to create your own 
 
 First, you need to generate your own repository from this template.
 
-1.  **Navigate to the GitHub Repository**: Go to the main page of this repository on GitHub.
-2.  **Use the Template**: Click the **"Use this template"** button located at the top of the page.
-3.  **Create a New Repository**: You will be prompted to create a new repository under your account. Give it a name (e.g., `my-portfolio`) and click **"Create repository from template"**.
-4.  **Clone Your New Repository**: Clone the newly created repository to your local machine.
+1. **Navigate to the GitHub Repository**: Go to the main page of this repository on GitHub.
+2. **Use the Template**: Click the **"Use this template"** button located at the top of the page.
+3. **Create a New Repository**: You will be prompted to create a new repository under your account. Give it a name (e.g., `my-portfolio`) and click **"Create repository from template"**.
+4. **Clone Your New Repository**: Clone the newly created repository to your local machine.
     ```sh
     git clone https://github.com/your-username/my-portfolio.git
     cd my-portfolio
@@ -29,62 +29,67 @@ Open `src/config/portfolioData.ts` and replace the placeholder content with your
 
 ```typescript
 export const portfolioData = {
-  // --- HERO SECTION ---
+  name: "Your Name",
+  image: "/your-image.jpg",
   hero: {
-    name: "Your Name",
     title: "Your Professional Title (e.g., Full-Stack Developer)",
-    subtitle: "A short, catchy subtitle about what you do.",
+    description: "A short, catchy subtitle about what you do.",
+    specialization: "Your specialization",
     socialProof: ["Award Winner", "Certified Developer", "Speaker"],
+    socialLinks: [
+      { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/your-username/' },
+      { name: 'GitHub', icon: Github, url: 'https://github.com/your-username' },
+    ],
   },
-
-  // --- SOCIAL LINKS ---
-  socials: {
-    linkedin: "https://www.linkedin.com/in/your-username/",
-    github: "https://github.com/your-username",
-    twitter: "https://twitter.com/your-username",
-    // Add or remove links as needed
-  },
-
-  // --- ABOUT SECTION ---
   about: {
-    description: "Write a few paragraphs about yourself, your passion, and your expertise. This text supports markdown.",
+    title: "About Me",
+    description1: "Write a paragraph about yourself, your passion, and your expertise.",
+    description2: "Write another paragraph about your background and experience.",
+    skillsTitle: "Top Skills",
+    keyHighlights: ["Skill 1", "Skill 2", "Skill 3"],
+    career: {
+      title: "Career Journey",
+      timeline: [
+        {
+          role: "Software Engineer",
+          company: "Tech Company Inc.",
+          period: "Jan 2022 - Present",
+          description: "Describe your responsibilities and achievements in this role.",
+        },
+      ]
+    }
   },
-
-  // --- TECHNOLOGIES SECTION ---
-  technologies: [
-    { name: "JavaScript", url: "logo-url.svg" },
-    { name: "React", url: "logo-url.svg" },
-    // Add all the technologies you want to showcase
-  ],
-
-  // --- PROJECTS SECTION ---
-  projects: [
-    {
-      title: "Project One",
-      description: "A brief description of your project.",
-      tags: ["React", "Next.js", "Tailwind CSS"],
-      liveUrl: "https://project-one-live-url.com",
-      githubUrl: "https://github.com/your-username/project-one",
-    },
-    // Add more projects
-  ],
-
-  // --- EXPERIENCE SECTION (RESUME) ---
-  experience: [
-    {
-      role: "Software Engineer",
-      company: "Tech Company Inc.",
-      period: "Jan 2022 - Present",
-      description: "Describe your responsibilities and achievements in this role.",
-    },
-    // Add more experience entries
-  ],
-
-  // --- CONTACT SECTION ---
+  services: {
+    title: "What I Do",
+    description: "A brief description of the services you offer.",
+    categories: [
+        // ...
+    ]
+  },
+  projects: {
+    title: "Featured Projects",
+    description: "A selection of your best work.",
+    projectList: [
+      {
+        title: "Project One",
+        company: "Client or Personal",
+        duration: "Year",
+        description: "A brief description of your project.",
+        tech: ["React", "Next.js", "Tailwind CSS"],
+        link: "https://project-one-live-url.com",
+      },
+    ]
+  },
   contact: {
-    email: "your.email@example.com",
-    phone: "+1 (123) 456-7890",
-  },
+    title: "Get In Touch",
+    description: "How people can reach you.",
+    form: {
+        // ...
+    },
+    channels: {
+        // ...
+    }
+  }
 };
 ```
 
@@ -92,36 +97,22 @@ export const portfolioData = {
 
 Your personal assets like your profile picture and resume PDF need to be replaced in the `public/` directory.
 
-1.  **Profile Picture**:
-    *   Add your photo to `public/`. You can name it `profile.jpg` or similar.
-    *   Update the path in the configuration file if you use a different name.
+1. **Profile Picture**:
+    * Update the `image` path in `src/config/portfolioData.ts` to match your new image file.
 
-2.  **Resume PDF**:
-    *   Place your resume PDF in `public/documents/`. You can name it `resume.pdf`.
-    *   Ensure the path in the configuration file matches the filename.
+2. **Resume PDF**:
+    * Place your resume PDF in `public/documents/`. You can name it `resume.pdf`.
+    * The "Download Resume" button in the `Resume` section will automatically point to this file.
 
-### Step 3: Set Up Environment Variables
+## Part 3: Using AI to Generate Code
 
-For features like the contact form to work, you need to provide your own credentials.
+You can leverage AI to help you generate or modify code for this portfolio.
 
-1.  **Create a `.env.local` file**: Duplicate the `.env.example` file and rename it to `.env.local`.
-    ```sh
-    cp .env.example .env.local
-    ```
-2.  **Fill in Your Credentials**: Open `.env.local` and add your own secrets for the MongoDB connection and email service (e.g., Gmail SMTP).
+1. **Open the AI Chat**: Open the AI chat panel in your editor.
+2. **Provide Context**: Tell the AI that you are working with a Next.js and Tailwind CSS portfolio template.
+3. **Ask for Code**: You can ask the AI to:
+    * "Create a new section for testimonials."
+    * "Change the color scheme of the hero section."
+    * "Add a new field to the projects data and display it."
 
-## Part 3: Run and Deploy Your Portfolio
-
-Once you have customized your content, you can run the portfolio locally to see the changes.
-
-1.  **Install Dependencies**:
-    ```sh
-    npm install
-    ```
-2.  **Run the Development Server**:
-    ```sh
-    npm run dev
-    ```
-3.  **Open Your Browser**: Navigate to `http://localhost:3000` to see your personalized portfolio.
-
-When you are ready, you can deploy your portfolio to any hosting provider that supports Next.js, such as Vercel, Netlify, or Google Cloud App Hosting.
+The AI will provide you with the necessary code snippets and instructions on where to place them.

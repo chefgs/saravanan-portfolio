@@ -1,44 +1,18 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink } from 'lucide-react';
-
-const projects = [
-  {
-    title: 'Cloud Release Automation',
-    company: 'Retail SaaS Startup',
-    duration: '2023',
-    description: 'Architected and implemented a fully automated cloud release pipeline, reducing release times from 2 days to just 2 hours. Leveraged Infrastructure as Code and modern CI/CD practices on Kubernetes.',
-    tech: ['Terraform', 'Kubernetes', 'AWS', 'CI/CD', 'Docker'],
-    link: '#',
-  },
-  {
-    title: 'Platform Engineering Portal (IDP)',
-    company: 'Fintech Startup',
-    duration: '2022',
-    description: 'Built a self-serve Internal Developer Platform (IDP) that enabled developers to provision infrastructure, manage environments, and deploy applications with zero friction, boosting developer velocity by 40%.',
-    tech: ['Platform Engineering', 'Backstage', 'Go', 'React', 'GCP'],
-    link: '#',
-  },
-  {
-    title: 'Content Engineering & SEO',
-    company: 'Major Cloud Vendor',
-    duration: 'Ongoing',
-    description: 'Develop and execute a content strategy for a major cloud vendor, creating SEO-optimized technical blog posts, tutorials, and documentation that drive organic traffic and developer engagement for new product launches.',
-    tech: ['Technical Writing', 'SEO', 'Content Strategy', 'DevRel'],
-    link: '#',
-  },
-];
+import { portfolioData } from '@/config/portfolioData';
 
 const ProjectsSection = () => {
   return (
     <section id="projects" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Featured Projects & Case Studies</h2>
-          <p className="mt-4 text-lg text-muted-foreground">A selection of my work demonstrating real-world impact.</p>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{portfolioData.projects.title}</h2>
+          <p className="mt-4 text-lg text-muted-foreground">{portfolioData.projects.description}</p>
         </div>
         <div className="grid gap-8">
-          {projects.map((project, index) => (
+          {portfolioData.projects.projectList.map((project, index) => (
             <a href={project.link} key={index} target="_blank" rel="noopener noreferrer" className="group block">
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-accent/50">
                 <div className="flex flex-col p-6">
