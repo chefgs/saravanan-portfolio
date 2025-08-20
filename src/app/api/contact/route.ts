@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { connectToDatabase } from '@/lib/mongodb';
+import connectToDatabase from '@/lib/mongodb';
 import { ContactMessage } from '@/models/contactMessage';
 import nodemailer from 'nodemailer';
 
@@ -22,8 +22,8 @@ export async function POST(req: NextRequest) {
     };
     let db;
     try {
-      const conn = await connectToDatabase();
-      db = conn.db;
+      const client = await connectToDatabase;
+      db = client.db();
     } catch (dbErr) {
       console.error('MongoDB connection error:', dbErr);
       return NextResponse.json({ error: 'Database connection failed.' }, { status: 500 });

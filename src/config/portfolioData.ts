@@ -207,6 +207,164 @@ export const portfolioData = {
       },
     ]
   },
+  technologies: {
+    title: "Technologies and Tools",
+    description: "Tools and technologies I use for DevOps, Cloud, AI, and Software Engineering",
+    logos: [
+      {
+        name: 'Jenkins',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/e/e9/Jenkins_logo.svg',
+      },
+      {
+        name: 'GitHub Actions',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg',
+      },
+      {
+        name: 'Jira',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Jira_Logo.svg',
+      },
+      {
+        name: 'Terraform',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg',
+      },
+      {
+        name: 'SonarQube',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/e/e6/Sonarqube-48x200.png',
+      },
+      {
+        name: 'HCP Vault',
+        url: 'https://www.hashicorp.com/_next/static/media/vault_on-dark.97792f64.svg',
+      },
+      {
+        name: 'HCP Waypoint',
+        url: 'https://www.hashicorp.com/_next/static/media/waypoint_on-dark.1f2cc8a5.svg',
+      },
+      {
+        name: 'Docker',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg',
+      },
+      {
+        name: 'Kubernetes',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg',
+      },
+      {
+        name: 'GenAI',
+        url: '/ai.png',
+      },
+      {
+        name: 'LangChain',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/6/60/LangChain_Logo.svg',
+      },
+      {
+        name: 'n8n',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/5/53/N8n-logo-new.svg',
+      },
+      {
+        name: 'DevOps',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Devops-toolchain.svg',
+      },
+      {
+        name: 'AWS',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg',
+      },
+      {
+        name: 'GCP',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Google_cloud.png',
+      },
+      {
+        name: 'Azure',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg',
+      },
+      {
+        name: 'NPM',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg',
+      },
+      {
+        name: 'Golang',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg',
+      },
+      {
+        name: 'Python',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg',
+      },
+      {
+        name: 'Next.js',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg',
+      },
+      {
+        name: 'React.js',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
+      },
+      {
+        name: 'Vue.js',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg',
+      },
+      {
+        name: 'Nuxt.js',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/a/ae/Nuxt_logo.svg',
+      },
+      {
+        name: 'Bash',
+        url: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg',
+      },
+    ]
+  },
+  resume: {
+    title: "Experience Timeline",
+    description: "A summary of my professional journey.",
+    downloadButton: "Download LinkedIn Profile (PDF)",
+    linkedInButton: "Visit LinkedIn Profile",
+    timeline: [
+      {
+        role: 'Founder',
+        company: 'CloudEngine Labs®',
+        period: 'Jul 2023 - Present',
+        description: 'Helping product startups with Cloud Technology Solutions, DevOps adoption, Infrastructure Automation, Platform Engineering, Technical Writing, and team development.',
+      },
+      {
+        role: 'Self Employed',
+        company: 'Freelance',
+        period: 'Jun 2023 - Present',
+        description: 'Providing services in Cloud Technology Consulting, DevOps, Infrastructure Automation, Platform Engineering, and Technical Writing.',
+      },
+      {
+        role: 'Technical Content Writer',
+        company: 'Freelance',
+        period: 'Jun 2019 - Present',
+        description: 'Contributing SEO-optimized technology blogs for product companies, focusing on how-to articles, practical use cases, and best practices for Cloud, DevOps, and SRE tools.',
+      },
+      {
+        role: 'DevOps Architect (Microsoft Fabric)',
+        company: 'Freelance',
+        period: 'Sep 2024 - Present',
+        description: 'Skills: Microsoft Azure, Power BI, Azure DevOps Services, Azure Resource Manager, Powershell.',
+      },
+      {
+        role: 'Principal Engineer (DevOps)',
+        company: 'InfraCloud Technologies',
+        period: 'Aug 2022 - May 2023',
+        description: 'Terraform | Ansible | Chef | AWS | Azure | GCP | Kubernetes | Docker | Go | Shell Scripting | API development | DevOps Consulting.',
+      },
+      {
+        role: 'Architect',
+        company: 'InfraCloud Technologies',
+        period: 'Aug 2021 - Jul 2022',
+        description: 'Chef | Terraform | Ansible | AWS | Azure | GCP | Kubernetes | Docker | Go | Shell Scripting | API development | DevOps Consulting.',
+      },
+      {
+        role: 'DevOps Architect',
+        company: 'Wipro Digital',
+        period: 'Apr 2020 - Jul 2021',
+        description: 'DevOps evangelist, implementing IaC using Chef, Ansible & Terraform across multiple cloud platforms (AWS, GCP, Azure).',
+      },
+       {
+        role: 'Tech Arch Delivery Associate Manager',
+        company: 'Accenture',
+        period: 'May 2015 - Mar 2019',
+        description: 'Cloud automation architect, specializing in Chef, AWS, Azure, Ruby and Shell scripting. C++ design and development and Team Mentor.',
+      },
+    ]
+  },
   contact: {
     title: "Get In Touch",
     description: "Have a project, a question, or just want to connect? Let's talk.",
