@@ -57,7 +57,7 @@ const timelineData = [
 const ResumeSection = () => {
   const handleDownload = () => {
     // Create a link to the PDF and trigger a download
-    const pdfUrl = '/documents/saravanan_profile.pdf';
+    const pdfUrl = '/documents/gsaravanan_profile.pdf';
     window.open(pdfUrl, '_blank');
   };
 
