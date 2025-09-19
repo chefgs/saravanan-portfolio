@@ -16,6 +16,8 @@ const socialLinks = [
 ];
 
 const socialProof = [
+  "Technology Consultant",
+  "DevOps, Cloud & AI Practitioner",
   "AWS Community Builder",
   "HashiCorp Ambassador",
   "Speaker",
@@ -33,7 +35,10 @@ const HeroSection = () => {
                 Accelerating Software Delivery with DevOps Cloud Automation & Deployment
               </h1>
               <p className="text-lg text-medium text-foreground mt-6">
-                  This is Saravanan, a problem solver passionate about Streamlining DevOps, Platform Engineering, Automating Infrastructure, Cloud operations, and Deploying AI at scale for real-world impact.
+                  This is Saravanan, Founder and Chief Technology Evangelist of CloudEngine Labs®
+              </p>
+              <p className="text-lg text-medium text-foreground mt-6">
+                  A Technology Solutions Consultant and a problem solver passionate about Streamlining DevOps, Platform Engineering, Automating Infrastructure, Cloud operations, and Deploying AI at scale for real-world impact.
               </p>
               <p className="text-lg font-medium font-semibold text-primary mt-4">
                 Building AccelSDLC - A Developer Focused IDP Platform
