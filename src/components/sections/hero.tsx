@@ -16,11 +16,10 @@ const socialLinks = [
 ];
 
 const socialProof = [
-  "Technology Consultant",
-  "DevOps, Cloud & AI Practitioner",
-  "AWS Community Builder",
+  "Sovereign AI Architect",
   "HashiCorp Ambassador",
-  "Speaker",
+  "AWS Community Builder",
+  "Delivered for Microsoft/DBS",
   "Tech Blogger"
 ];
 
@@ -32,13 +31,13 @@ const HeroSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-12">
             <div className="order-2 md:order-1 space-y-4 max-w-6xl lg:max-w-7xl xl:max-w-full mx-auto md:mx-0">
               <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl leading-tight">
-                Accelerating Software Delivery with DevOps Cloud Automation & Deployment
+                I Turn Compliance Risks into Sovereign AI Assets
               </h1>
               <p className="text-lg text-medium text-foreground mt-6">
-                  This is Saravanan, Founder and Chief Technology Evangelist of CloudEngine Labs®
+                This is Saravanan, Founder of CloudEngine Labs®
               </p>
               <p className="text-lg text-medium text-foreground mt-6">
-                  A Technology Solutions Consultant and a problem solver passionate about Streamlining DevOps, Platform Engineering, Automating Infrastructure, Cloud operations, and Deploying AI at scale for real-world impact.
+                Building secure, SOC2-compliant Private GPT infrastructure for regulated industries. I help Fintechs and Banks architect Sovereign AI on AWS Bedrock and On-Prem to save costs & reduce risk.
               </p>
               <p className="text-lg font-medium font-semibold text-primary mt-4">
                 Building AccelSDLC - A Developer Focused IDP Platform
@@ -69,7 +68,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 rounded-full bg-primary/10 blur-3xl animate-pulse"></div>
               <Card className="rounded-full w-4/5 h-4/5 overflow-hidden">
                 <div className="relative w-full h-full">
-                  <Image 
+                  <Image
                     src="/saravanan-gnanaguru.jpg"
                     alt="Saravanan Gnanaguru"
                     fill

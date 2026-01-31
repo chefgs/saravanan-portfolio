@@ -4,11 +4,19 @@ import { ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Cloud Release Automation',
-    company: 'Retail SaaS Startup',
+    title: '$180k/Year Cloud Savings',
+    company: 'Fintech Startup',
     duration: '2023',
-    description: 'Architected and implemented a fully automated cloud release pipeline, reducing release times from 2 days to just 2 hours. Leveraged Infrastructure as Code and modern CI/CD practices on Kubernetes.',
-    tech: ['Terraform', 'Kubernetes', 'AWS', 'CI/CD', 'Docker'],
+    description: 'Saved a startup $180k/year by replacing a complex Kubernetes proposal with a streamlined AWS Fargate architecture. Reduced complexity and improved security posture.',
+    tech: ['AWS Fargate', 'Cost Optimization', 'Security', 'Cloud Architecture'],
+    link: '#',
+  },
+  {
+    title: 'Private GPT Architecture',
+    company: 'Banking Client',
+    duration: '2024',
+    description: 'Designed and deployed "Private GPT" infrastructure and "Sovereign AI" platforms on AWS Bedrock and On-Prem (Ubuntu/OSS) that pass SOC2/ISO audits.',
+    tech: ['AWS Bedrock', 'Private GPT', 'SOC2', 'Sovereign AI', 'Ubuntu'],
     link: '#',
   },
   {
@@ -17,14 +25,6 @@ const projects = [
     duration: '2022',
     description: 'Built a self-serve Internal Developer Platform (IDP) that enabled developers to provision infrastructure, manage environments, and deploy applications with zero friction, boosting developer velocity by 40%.',
     tech: ['Platform Engineering', 'Backstage', 'Go', 'React', 'GCP'],
-    link: '#',
-  },
-  {
-    title: 'Content Engineering & SEO',
-    company: 'Major Cloud Vendor',
-    duration: 'Ongoing',
-    description: 'Develop and execute a content strategy for a major cloud vendor, creating SEO-optimized technical blog posts, tutorials, and documentation that drive organic traffic and developer engagement for new product launches.',
-    tech: ['Technical Writing', 'SEO', 'Content Strategy', 'DevRel'],
     link: '#',
   },
 ];
@@ -43,7 +43,7 @@ const ProjectsSection = () => {
               <Card className="overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-accent/50">
                 <div className="flex flex-col p-6">
                   <CardHeader>
-                     <p className="text-sm text-muted-foreground">{project.company} &middot; {project.duration}</p>
+                    <p className="text-sm text-muted-foreground">{project.company} &middot; {project.duration}</p>
                     <CardTitle className="text-2xl group-hover:text-accent transition-colors">
                       {project.title}
                       {project.link !== '#' && <ExternalLink className="inline-block h-5 w-5 ml-2 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" />}
