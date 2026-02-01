@@ -31,16 +31,16 @@ const HeroSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-12">
             <div className="order-2 md:order-1 space-y-4 max-w-6xl lg:max-w-7xl xl:max-w-full mx-auto md:mx-0">
               <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl leading-tight">
-                I Turn Compliance Risks into Sovereign AI Assets
+                The Sovereign AI Architect for Regulated Finance.
               </h1>
               <p className="text-lg text-medium text-foreground mt-6">
-                This is Saravanan, Founder of CloudEngine Labs®
+                Founder of CloudEngine Labs® | I build compliance focused infrastructure.
               </p>
               <p className="text-lg text-medium text-foreground mt-6">
-                Building secure, SOC2-compliant Private GPT infrastructure for regulated industries. I help Fintechs and Banks architect Sovereign AI on AWS Bedrock and On-Prem to save costs & reduce risk.
+                I architect secure, compliant Private AI infrastructure for regulated industries. I help Fintechs and Banks build Sovereign AI on Cloud and On-Prem.
               </p>
               <p className="text-lg font-medium font-semibold text-primary mt-4">
-                Building AccelSDLC - A Developer Focused IDP Platform
+                Creator of the AccelSDLC Platform.
               </p>
               <div className="flex justify-center md:justify-start flex-wrap gap-2 mt-6">
                 {socialProof.map(item => <Badge key={item} variant="secondary">{item}</Badge>)}
