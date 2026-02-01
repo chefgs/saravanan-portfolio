@@ -25,7 +25,7 @@ export default function RootLayout({
     "@type": "Person",
     "name": "Saravanan Gnanaguru",
     "url": "https://gsaravanan.dev",
-    "image": "https://gsaravanan.dev/path-to-your-headshot.jpg",
+    "image": "https://www.gsaravanan.dev/saravanan-gnanaguru.jpg",
     "jobTitle": "Sovereign AI Architect & Founder",
     "description": "Cloud Architect specializing in Sovereign AI infrastructure, Private GPT deployments, and SOC2-compliant automation for Fintech and regulated industries.",
     "worksFor": {
