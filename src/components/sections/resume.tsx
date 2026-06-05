@@ -46,11 +46,23 @@ const timelineData = [
     period: 'Apr 2020 - Jul 2021',
     description: 'DevOps evangelist, implementing IaC using Chef, Ansible & Terraform across multiple cloud platforms (AWS, GCP, Azure).',
   },
-   {
+  {
     role: 'Tech Arch Delivery Associate Manager',
     company: 'Accenture',
     period: 'May 2015 - Mar 2019',
     description: 'Cloud automation architect, specializing in Chef, AWS, Azure, Ruby and Shell scripting. C++ design and development and Team Mentor.',
+  },
+  {
+    role: 'Senior Consultant / Engineer',
+    company: 'CapGemini',
+    period: 'Earlier Career',
+    description: 'Contributed to enterprise delivery, engineering execution, and large-scale transformation programs across client environments.',
+  },
+  {
+    role: 'Consultant / Engineer',
+    company: 'HCL Technologies',
+    period: 'Earlier Career',
+    description: 'Built delivery foundations across software engineering, support, and infrastructure-focused engagements for enterprise teams.',
   },
 ];
 

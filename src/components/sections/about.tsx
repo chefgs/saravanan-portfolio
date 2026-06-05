@@ -7,6 +7,14 @@ const keyHighlights = [
     "Infrastructure as Code (IaC)", "Team Management", "Platform Engineering", "DevOps"
 ];
 
+const enterpriseExperience = [
+    "Wipro",
+    "Accenture",
+    "CapGemini",
+    "HCL Technologies",
+    "InfraCloud Technologies",
+];
+
 const timeline = [
     {
         role: "Founder",
@@ -57,6 +65,23 @@ const AboutSection = () => {
                                 <div className="flex flex-wrap gap-2">
                                     {keyHighlights.map(skill => (
                                         <Badge key={skill} variant="secondary">{skill}</Badge>
+                                    ))}
+                                </div>
+                            </CardContent>
+                        </Card>
+                        <Card className="bg-background">
+                            <CardHeader>
+                                <CardTitle className="text-foreground">Enterprise Experience</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid gap-3 sm:grid-cols-2">
+                                    {enterpriseExperience.map((company) => (
+                                        <div
+                                            key={company}
+                                            className="rounded-xl border border-border bg-card px-4 py-3 text-sm font-semibold text-foreground shadow-sm"
+                                        >
+                                            {company}
+                                        </div>
                                     ))}
                                 </div>
                             </CardContent>

@@ -24,6 +24,14 @@ const socialProof = [
   "Tech Blogger"
 ];
 
+const companyLogos = [
+  "Wipro",
+  "Accenture",
+  "CapGemini",
+  "HCL Technologies",
+  "InfraCloud Technologies",
+];
+
 const HeroSection = () => {
   return (
     <section id="home" className="relative w-full overflow-hidden bg-background py-12 md:px-10 md:py-16">
@@ -45,6 +53,21 @@ const HeroSection = () => {
               </p>
               <div className="flex justify-center md:justify-start flex-wrap gap-2 mt-6">
                 {socialProof.map(item => <Badge key={item} variant="secondary">{item}</Badge>)}
+              </div>
+              <div className="mt-8 rounded-2xl border border-white/30 bg-white/10 p-4 backdrop-blur-sm dark:border-white/10 dark:bg-black/10">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-foreground/80">
+                  Experience across
+                </p>
+                <div className="mt-3 flex flex-wrap justify-center gap-3 md:justify-start">
+                  {companyLogos.map((company) => (
+                    <span
+                      key={company}
+                      className="rounded-full border border-white/30 bg-background/70 px-4 py-2 text-sm font-semibold text-foreground shadow-sm"
+                    >
+                      {company}
+                    </span>
+                  ))}
+                </div>
               </div>
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start mt-8">
                 <Button size="lg" asChild>
