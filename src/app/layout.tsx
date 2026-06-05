@@ -1,7 +1,20 @@
 import type { Metadata } from 'next';
+import localFont from 'next/font/local';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import { ThemeProvider } from '@/components/theme-provider';
+
+const openSans = localFont({
+  src: [
+    { path: './fonts/open-sans-latin-300-normal.woff2', weight: '300', style: 'normal' },
+    { path: './fonts/open-sans-latin-400-normal.woff2', weight: '400', style: 'normal' },
+    { path: './fonts/open-sans-latin-500-normal.woff2', weight: '500', style: 'normal' },
+    { path: './fonts/open-sans-latin-600-normal.woff2', weight: '600', style: 'normal' },
+    { path: './fonts/open-sans-latin-700-normal.woff2', weight: '700', style: 'normal' },
+  ],
+  variable: '--font-sans',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Saravanan Gnanaguru | Sovereign AI & Compliance Architect for Fintech",
@@ -63,7 +76,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="font-sans antialiased">
+      <body className={`${openSans.variable} font-sans antialiased`}>
         {/* Glowy blurred background */}
         <div className="fixed inset-0 -z-10 pointer-events-none">
           <div className="absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] rounded-full bg-purple-500 opacity-30 blur-3xl"></div>
