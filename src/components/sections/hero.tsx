@@ -47,7 +47,7 @@ const HeroSection = () => {
               <div className="flex justify-center md:justify-start flex-wrap gap-2 mt-6">
                 {socialProof.map(item => <Badge key={item} variant="secondary">{item}</Badge>)}
               </div>
-              <div className="mt-8 rounded-2xl border border-white/30 bg-white/10 p-4 backdrop-blur-sm dark:border-white/10 dark:bg-black/10">
+{/*               <div className="mt-8 rounded-2xl border border-white/30 bg-white/10 p-4 backdrop-blur-sm dark:border-white/10 dark:bg-black/10">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-foreground/80">
                   Experience across
                 </p>
@@ -61,7 +61,7 @@ const HeroSection = () => {
                     </span>
                   ))}
                 </div>
-              </div>
+              </div> */}
               <div className="flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start mt-8">
                 <Button size="lg" asChild>
                   <Link href="#projects">
