@@ -13,7 +13,7 @@ const navLinks = [
   { href: '#technologies', label: 'Tools' },
   { href: '#services', label: 'Services' },
   { href: '#projects', label: 'Projects' },
-  // { href: '#blog', label: 'Blog' },
+  { href: '#blog', label: 'Blog' },
   { href: '#resume', label: 'Experience' },
   { href: '#contact', label: 'Contact' },
 ];
@@ -41,7 +41,7 @@ const Header = () => {
           ))}
         </nav>
         <div className="flex items-center gap-2 ml-4">
-           <ThemeToggle />
+          <ThemeToggle />
           <div className="md:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
