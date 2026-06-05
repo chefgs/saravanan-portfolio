@@ -52,10 +52,19 @@ const AboutSection = () => {
                 <div className="grid gap-12 md:grid-cols-2">
                     <div className="space-y-6">
                         <p className="text-muted-foreground leading-relaxed text-justify">
-                            I am the founder of CloudEngine Labs, a technology startup & private limited company that provides DevOps Cloud consulting services to Software development startup companies. With over 18 years of experience in various phases of IT software development that includes design, code development and DevOps & Cloud design and implementation. I help product startups accelerate the delivery of their products and features and more reliably, using cloud automation, infrastructure as code, and platform engineering.
+                            20 years ago I was writing C++ at Wipro. Today I architect Sovereign AI infrastructure for regulated industries and help engineering teams adopt AI without losing the discipline that made them good.
                         </p>
                         <p className="text-muted-foreground leading-relaxed text-justify">
-                           My success story includes reducing the overall product release automation time from 2 days to 2 hours for a retail product development startup company. Before founding CloudEngine Labs, I worked with various companies, including Wipro, Accenture, Capgemini, HCL Technologies, and Infracloud Technologies, on projects ranging from small startups to large enterprise clients. I am also a technology blogger, speaker, career mentor, AWS Community Builder, and Hashicorp Ambassador. My passion is to share my knowledge and expertise in DevOps cloud technologies and help others succeed in their careers.
+                            Before founding CloudEngine Labs in 2023, I worked across Wipro, Accenture, Capgemini, HCL Technologies, and InfraCloud — from application developer to cloud architect. The through-line was always the same: make complex systems reliable, secure, and auditable.
+                        </p>
+                        <p className="text-muted-foreground leading-relaxed text-justify">
+                            In the last 18 months I added a different kind of proof: 59 production-deployed applications built across 7 AI coding tools — all versioned on GitHub, all with real databases, real auth, real CI/CD, and UI end-to-end test automation. Not prototypes. Production.
+                        </p>
+                        <p className="text-muted-foreground leading-relaxed text-justify">
+                            I also started the AI Engineering Circle — a weekly practitioner co-working group now in its 8th week with a 4.9 Luma rating — because the best way to understand where AI fits in real engineering work is to work through it with other practitioners, not read about it.
+                        </p>
+                        <p className="text-muted-foreground leading-relaxed text-justify">
+                            AWS Community Builder since 2021. HashiCorp Ambassador since 2023. The case studies below are real. The numbers are real. The Topmate link works.
                         </p>
                         <Card className="bg-background">
                             <CardHeader>

@@ -17,7 +17,7 @@ const socialLinks = [
 
 const socialProof = [
   "Sovereign AI Architect",
-  "HashiCorp Ambassador",
+  "HashiCorp Ambassador (2023-2025)",
   "AWS Community Builder",
   "Delivered for Microsoft/DBS",
   "Tech Blogger"
@@ -41,14 +41,8 @@ const HeroSection = () => {
               <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl leading-tight">
                 The Sovereign AI Architect for Regulated Finance.
               </h1>
-              <p className="text-lg text-medium text-foreground mt-6">
-                Founder of CloudEngine Labs®
-              </p>
-              <p className="text-lg text-medium text-foreground mt-6">
-                I architect secure, compliant Private AI infrastructure for regulated industries. I help Fintechs and Banks build Sovereign AI on Cloud and On-Prem.
-              </p>
-              <p className="text-lg font-medium font-semibold text-primary mt-4">
-                Creator of the AccelSDLC Platform.
+              <p className="mt-6 whitespace-pre-line text-lg text-medium text-foreground">
+                {"I architect secure, compliant Private AI infrastructure for regulated industries — AWS Bedrock, On-Prem vLLM, SOC2/ISO patterns.\n\nI also help engineering teams adopt AI across the full SDLC — tool selection, governance frameworks, and SDLC process discipline.\n\n20+ years of enterprise experience. 50+ production-deployed applications. AWS Community Builder since 2021. HashiCorp Ambassador (2023-2025)"}
               </p>
               <div className="flex justify-center md:justify-start flex-wrap gap-2 mt-6">
                 {socialProof.map(item => <Badge key={item} variant="secondary">{item}</Badge>)}
