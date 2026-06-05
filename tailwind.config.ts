@@ -19,7 +19,15 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-sans)", "sans-serif"],
+        sans: [
+          "Inter",
+          "Segoe UI",
+          "Helvetica Neue",
+          "Arial",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
       },
       colors: {
         border: "hsl(var(--border))",
