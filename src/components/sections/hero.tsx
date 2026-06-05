@@ -42,7 +42,7 @@ const HeroSection = () => {
                 The Sovereign AI Architect for Regulated Finance.
               </h1>
               <p className="text-lg text-medium text-foreground mt-6">
-                Founder of CloudEngine Labs® | I build compliance focused infrastructure.
+                Founder of CloudEngine Labs®
               </p>
               <p className="text-lg text-medium text-foreground mt-6">
                 I architect secure, compliant Private AI infrastructure for regulated industries. I help Fintechs and Banks build Sovereign AI on Cloud and On-Prem.

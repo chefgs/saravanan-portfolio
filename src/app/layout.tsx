@@ -5,7 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
   title: "Saravanan Gnanaguru | Sovereign AI & Compliance Architect for Fintech",
-  description: "I build secure, SOC2-compliant Private GPT infrastructure for regulated industries. Architecting Sovereign AI on AWS and On-Prem.",
+  description: "I build secure, SOC2-compliant Private GPT infrastructure for regulated industries. Architecting Sovereign AI on Cloud and On-Prem.",
 };
 
 export default function RootLayout({
