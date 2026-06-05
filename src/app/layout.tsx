@@ -13,6 +13,54 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Saravanan Gnanaguru",
+    "url": "https://gsaravanan.dev",
+    "image": "https://www.gsaravanan.dev/_next/image?url=%2Fsaravanan-gnanaguru.jpg&w=828&q=75",
+    "jobTitle": "Sovereign AI Architect & Founder",
+    "description": "Cloud Architect specializing in Sovereign AI infrastructure, Private GPT deployments, and SOC2-compliant automation for Fintech and regulated industries.",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "CloudEngine Labs®",
+      "url": "https://cloudenginelabs.io"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/saravanan-gnanaguru",
+      "https://twitter.com/saransid",
+      "https://github.com/chefgs",
+      "https://dev.to/chefgs"
+    ],
+    "knowsAbout": [
+      "Sovereign AI Architecture",
+      "Private GPT Implementation",
+      "AWS Bedrock Security",
+      "SOC2 Compliance Automation",
+      "Fintech Cloud Infrastructure",
+      "Platform Engineering",
+      "Terraform & Infrastructure as Code",
+      "Cost Optimization",
+      "AI & Machine Learning",
+      "AI Consulting",
+      "AI SDLC Best Practices"
+    ],
+    "award": [
+      "HashiCorp Ambassador - 2023-2025",
+      "AWS Community Builder - Since 2021"
+    ],
+    "alumniOf": [
+      {
+        "@type": "Organization",
+        "name": "Microsoft Fabric (Consultant)"
+      }
+    ],
+    "brand": {
+      "@type": "Brand",
+      "name": "The Secure Innovation Sandbox"
+    }
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="font-sans antialiased">
