@@ -11,26 +11,51 @@ const socialLinks = [
   { name: 'Email', icon: Mail, url: 'mailto:saravanan@cloudenginelabs.io' },
 ];
 
+const ecosystemLinks = [
+  { name: 'AI Engineering Circle', url: 'https://ai-engineering.in' },
+  { name: 'Dev Logs & Field Notes', url: 'https://gsaravanan.com' },
+  { name: 'Product Portfolio', url: 'https://gs-vibe-codes.lovable.app' },
+  { name: 'Book a Call', url: 'https://topmate.io/saravanan_gnanaguru/' },
+];
+
 const Footer = () => {
   return (
     <footer className="bg-card text-card-foreground border-t">
-      <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-8 sm:flex-row md:px-6">
-        <div className="text-center sm:text-left">
-          <p className="text-sm">
-            &copy; {new Date().getFullYear()} Saravanan Gnanaguru. All rights reserved.
-          </p>
-          <p className="text-xs text-muted-foreground">
-            Built with Next.js & Tailwind CSS
-          </p>
-        </div>
-        <div className="flex items-center gap-2">
-          {socialLinks.map((link) => (
-            <Button key={link.name} variant="ghost" size="icon" asChild>
-              <a href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.name}>
-                <link.icon className="h-5 w-5" />
-              </a>
-            </Button>
-          ))}
+      <div className="container mx-auto flex flex-col gap-6 px-4 py-8 md:px-6">
+        <div className="flex flex-col items-center justify-between gap-4 lg:flex-row lg:items-end">
+          <div className="w-full text-center lg:text-left">
+            <div className="flex flex-col items-center gap-3 text-sm text-muted-foreground sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-2 lg:flex lg:flex-row lg:flex-wrap lg:items-center">
+              <span className="font-medium text-foreground sm:col-span-2 lg:col-auto">Ecosystem:</span>
+              {ecosystemLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-foreground"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
+            <div className="mt-4">
+              <p className="text-sm">
+                &copy; {new Date().getFullYear()} Saravanan Gnanaguru. All rights reserved.
+              </p>
+              <p className="text-xs text-muted-foreground">
+                Built with Next.js & Tailwind CSS
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            {socialLinks.map((link) => (
+              <Button key={link.name} variant="ghost" size="icon" asChild>
+                <a href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.name}>
+                  <link.icon className="h-5 w-5" />
+                </a>
+              </Button>
+            ))}
+          </div>
         </div>
       </div>
     </footer>

@@ -16,28 +16,28 @@ const allBlogPosts = [
     description: 'Why public chatbots fail audits. A deep dive into your AWS Bedrock + VPC Endpoint + Private Subnet topology.',
     tags: ['#PrivateGPT', '#Architecture', '#SOC2'],
     category: 'Sovereign AI',
-    link: '#',
+    link: 'https://gsaravanan.com/posts/anatomy-of-private-gpt-soc2',
   },
   {
     title: 'Sovereign AI on Metal: Building an Air-Gapped LLM Stack with Ubuntu & vLLM',
     description: 'For when the cloud isn\'t private enough. How to run a "Sovereign Appliance" using hardened Ubuntu and Open Source models.',
     tags: ['#OnPremise', '#Ubuntu', '#vLLM'],
     category: 'Sovereign AI',
-    link: '#',
+    link: 'https://gsaravanan.com/topics',
   },
   {
     title: 'From Prompt to Production: The "Golden Path" for Secure GenAI Apps',
     description: 'Stop letting developers paste API keys in code. A guide to the Lambda + Bedrock + Guardrails serverless pattern.',
     tags: ['#SecureGenAI', '#Lambda', '#Guardrails'],
     category: 'Sovereign AI',
-    link: '#',
+    link: 'https://gsaravanan.com/topics',
   },
   {
     title: 'The Hidden Costs of AI: How to Prevent "Token Shock" in AWS Bedrock',
     description: 'GenAI is cheap on Day 1 and expensive on Day 30. How to implement quotas and cost governance using APIGW throttling.',
     tags: ['#CostOptimization', '#AWSBedrock', '#Governance'],
     category: 'Sovereign AI',
-    link: '#',
+    link: 'https://gsaravanan.com/posts/token-shock-bedrock',
   },
   // Theme B: Compliance-as-Code
   {
@@ -45,56 +45,56 @@ const allBlogPosts = [
     description: 'How to use Infrastructure-as-Code to prove Immutability and Traceability for ISO audits.',
     tags: ['#Terraform', '#IaC', '#Compliance'],
     category: 'Compliance',
-    link: '#',
+    link: 'https://gsaravanan.com/topics',
   },
   {
     title: 'Killing the Bastion Host: Zero-Trust Access Patterns for Fintech',
     description: 'Why SSH keys are a liability. Using AWS SSM Session Manager and identity-based access for compliant operations.',
     tags: ['#ZeroTrust', '#AWSSSM', '#Security'],
     category: 'Compliance',
-    link: '#',
+    link: 'https://gsaravanan.com/topics',
   },
   {
     title: 'The $180,000 Kubernetes Mistake: Why Complexity is a Security Risk',
     description: 'The story of the rightsizing win. Arguing that a complex K8s cluster is harder to secure and audit than a simple ECS setup.',
     tags: ['#CloudCost', '#Kubernetes', '#Complexity'],
     category: 'Compliance',
-    link: '#',
+    link: 'https://gsaravanan.com/topics',
   },
   {
     title: 'NAT Gateways are Leaking Your Data (and Your Budget)',
     description: 'A technical takedown of the default Public Subnet + NAT Gateway pattern. Why VPC Interface Endpoints are superior.',
     tags: ['#AWS', '#Networking', '#Security'],
     category: 'Compliance',
-    link: '#',
+    link: 'https://gsaravanan.com/topics',
   },
   {
     title: 'The Death of .env Files: Automated Secret Rotation with Terraform',
     description: 'Hardcoded secrets in CI/CD variables are a compliance failure. Walk through AWS Secrets Manager rotation.',
     tags: ['#SecretsManager', '#Security', '#Terraform'],
     category: 'Compliance',
-    link: '#',
+    link: 'https://gsaravanan.com/topics',
   },
   {
     title: 'Deploy on Friday: The ECS Blue/Green Safety Net',
     description: 'Compliance requires availability. How to set up AWS CodeDeploy with ECS Fargate for safe deployments.',
     tags: ['#ECS', '#BlueGreen', '#DevOps'],
     category: 'Compliance',
-    link: '#',
+    link: 'https://gsaravanan.com/topics',
   },
   {
     title: 'Logs are Your Forensic Evidence: Structured Security Logging',
     description: 'Text logs are useless during an incident. Guide on implementing JSON Structured Logging and CloudWatch Insights.',
     tags: ['#Logging', '#Forensics', '#Security'],
     category: 'Compliance',
-    link: '#',
+    link: 'https://gsaravanan.com/topics',
   },
   {
     title: 'The "Region Nuke" Test: Why IaC is Your Ransomware Policy',
     description: 'True Disaster Recovery isn\'t just backups. Using Terraform to re-hydrate an entire environment in a fresh region.',
     tags: ['#DisasterRecovery', '#Terraform', '#Resiliency'],
     category: 'Compliance',
-    link: '#',
+    link: 'https://gsaravanan.com/topics',
   },
   // Theme C: Platform Architect
   {
@@ -102,21 +102,21 @@ const allBlogPosts = [
     description: 'Don\'t sell IDPs as "making devs happy." Sell them as "making auditors happy" by forcing standardized paths.',
     tags: ['#IDP', '#Compliance', '#PlatformEng'],
     category: 'Platform',
-    link: '#',
+    link: 'https://gsaravanan.com/topics',
   },
   {
     title: 'Supply Chain Security in GitHub Actions: Stopping the Next SolarWinds',
     description: 'Leveraging your GitHub expertise. Using SBOMs and signed commits to guarantee code provenance.',
     tags: ['#GitHubActions', '#Security', '#SBOM'],
     category: 'Platform',
-    link: '#',
+    link: 'https://gsaravanan.com/topics',
   },
   {
     title: 'Identity is the New Perimeter: Integrating Cognito with Private AI Workloads',
     description: 'How to ensure that only the right employee can access the right LLM model using strict IAM and Cognito claims.',
     tags: ['#Cognito', '#IAM', '#PrivateAI'],
     category: 'Platform',
-    link: '#',
+    link: 'https://gsaravanan.com/posts/identity-new-perimeter-cognito',
   },
 ];
 
@@ -241,6 +241,17 @@ const BlogSection = () => {
             <Button variant="link" onClick={() => { setSearchQuery(''); setActiveTab('All'); }}>Clear filters</Button>
           </div>
         )}
+
+        <div className="mt-10 text-center">
+          <a
+            href="https://gsaravanan.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-sm font-semibold text-accent transition-colors hover:text-accent/80 hover:underline"
+          >
+            View all field notes <ArrowRight className="ml-1 h-4 w-4" />
+          </a>
+        </div>
 
         <div className="mt-16 text-center">
           <Card className="max-w-xl mx-auto p-6">
